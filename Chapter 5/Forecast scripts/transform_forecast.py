@@ -134,7 +134,7 @@ campy_feces = joblib.load('<your_file_path>')
 campy_soil = joblib.load('<your_file_path>')
 
 #establish a connection to the database of interest where table is present
-conn = psycopg2.connect("host=localhost dbname=<your_db_name> user=<your_user_name> password=<your_passwork>")
+conn = psycopg2.connect("host=localhost dbname=<your_db_name> user=<your_user_name> password=<your_password>")
 cur = conn.cursor()
 
 for i in range(0, len(final_all_days)):
