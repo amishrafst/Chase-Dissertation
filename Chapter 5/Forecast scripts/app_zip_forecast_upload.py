@@ -4,7 +4,7 @@ import psycopg2
 from psycopg2.extras import Json
 
 #establish a connection to the database of interest where table is present
-conn = psycopg2.connect("host=localhost dbname=weather_app user=mishralab password=rainbow")
+conn = psycopg2.connect("host=localhost dbname=<your_db_name> user=<your_user_name> password=<your_password>")
 cur = conn.cursor()
 
 zips = zips.selected_zips
