@@ -21,7 +21,7 @@ import joblib
 
 
 #establish a connection to the database of interest where table is present
-conn = psycopg2.connect("host=localhost dbname=<your_db_name> user=<your_user_name> password=<your_password>')
+conn = psycopg2.connect("host=localhost dbname=<your_db_name> user=<your_user_name> password=<your_password>")
 cur = conn.cursor()
 
 cur.execute("SELECT DISTINCT ON (zip_code) id, zip_code, forecast, date FROM zip_forecast_app ORDER BY zip_code, id DESC;")
